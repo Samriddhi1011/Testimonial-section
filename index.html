@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Testimonials</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+         <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <span class="badge">Feedback</span>
+        <h2>What Our Clients Say</h2>
+        <p>Discover how teams build faster and grow bigger with our solution.</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="enterprise">Enterprise</button>
+        <button class="tab-btn" data-filter="startup">Startups</button>
+        <button class="tab-btn" data-filter="freelance">Freelancers</button>
+      </div>
+
+      <div class="slider-container" id="sliderContainer">
+        <div class="testimonials-wrapper" id="testimonialsWrapper">
+          
+          <div class="testimonial-card" data-category="enterprise">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Amazing experience! Everything was smooth from onboarding to deployment. The support team is top-notch and always ready to help."
+            </p>
+            <div class="user-info">
+              <img src="https://images.unsplash.com/photo-1563351672-62b74891a28a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Aarav Sharma" class="avatar" />
+              <div>
+                <h4 class="user-name">Ayush Gupta</h4>
+                <span class="user-role">CEO of TechSolutions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-category="startup">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "As an early-stage startup, speed is everything. This tool allowed us to launch 3 weeks ahead of schedule without sacrificing quality."
+            </p>
+            <div class="user-info">
+              <img src="https://media.istockphoto.com/id/1830126474/photo/portrait-of-a-business-man-sitting-in-an-office.jpg?s=1024x1024&w=is&k=20&c=y6ekaWOU98cltT8YkEn8dykF4-hLdCu3nNBGPvC4AG8=" alt="Priya Nair" class="avatar" />
+              <div>
+                <h4 class="user-name">Mukul Gahlot</h4>
+                <span class="user-role">Founder, MavViVi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-category="freelance">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Great Experience! The workflow automation features saved me around 15 hours a week. I can now handle twice as many client accounts seamlessly."
+            </p>
+            <div class="user-info">
+              <img src="https://media.istockphoto.com/id/1200609914/photo/business-woman-in-an-office.jpg?s=1024x1024&w=is&k=20&c=pOyacWEEQokwAq3UJmpL6BwaUjRxAu2Y-3_dwSh02QU=" alt="Rohan Verma" class="avatar" />
+              <div>
+                <h4 class="user-name">Nitya Mittal</h4>
+                <span class="user-role">Lead Product Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-category="enterprise">
+            <i class="fa-solid fa-quote-right quote-icon"></i>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="feedback-text">
+              "Outstanding security standards and intuitive dashboard design! Onboarding 200+ team members took less than a single day."
+            </p>
+            <div class="user-info">
+              <img src="https://images.unsplash.com/photo-1634595477722-7bc68dd410fd?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Ananya Gupta" class="avatar" />
+              <div>
+                <h4 class="user-name">Abhilasha Gandotra</h4>
+                <span class="user-role">VP of Operations, GlobalScale</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="controls-container">
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Testimonial">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        
+        <div class="dots-container" id="dotsContainer"></div>
+
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Testimonial">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
